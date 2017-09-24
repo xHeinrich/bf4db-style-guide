@@ -1,0 +1,58 @@
+.forum-feed {
+  @extend .bf4db-feature;
+  padding: 20px;
+  max-height: 250px;
+  text-align: left;
+  text-transform: none;
+
+  .forum-update
+  {
+    @extend .row;
+    width: 100%;
+
+    .thread-info
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+    .thread-title
+    {
+      margin-bottom: 0;
+      line-height: 1;
+      color: map-get($bf4db-colors, "font-base");
+      font-weight: bold;
+      text-overflow: ellipsis;
+
+      /* Required for text-overflow to do anything */
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .info
+    {
+      color: darken(map-get($bf4db-colors, "font-base"), 20%);
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      text-transform: none;
+      text-transform: none;
+      line-height: 1.6;
+      text-overflow: ellipsis;
+
+      /* Required for text-overflow to do anything */
+      white-space: nowrap;
+      overflow: hidden;
+
+      .username
+      {
+        padding-right: 15px;
+      }
+
+      .updated-at
+      {
+
+      }
+    }
+  }
+}

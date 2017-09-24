@@ -1,0 +1,62 @@
+//@import "~slick-carousel/slick/slick";
+//@import "~slick-carousel/slick/slick-theme";
+
+.news-slider-container
+{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -30px;
+
+  a
+  {
+    text-decoration: none;
+  }
+
+  .slide
+  {
+    border-bottom: 3px solid theme-color("secondary");
+    min-height: 200px;
+    max-height: 250px;
+    background-size: cover;
+
+    .info
+    {
+      padding: 25px;
+      color: map-get($bf4db-colors, "font-base");
+      background: rgba(theme-color("primary-tone"), 0.7);
+      width: 350px;
+      height: 397px;
+
+      h2
+      {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      p
+      {
+        color: darken(map-get($bf4db-colors, "font-base"), 20%);
+      }
+    }
+  }
+
+  .slick-dots
+  {
+    bottom: 10px;
+    left: 40px;
+    width: auto;
+
+    li
+    {
+      button
+      {
+        &:before
+        {
+          color: theme-color("secondary");
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

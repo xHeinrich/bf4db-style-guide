@@ -1,9 +1,27 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
+/*
+  NPM Packages
+ */
 @import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+/*
+  Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+/*
+  custom
+ */
+@import "global";
+@import "input";
+
+@import "components/homesearch";
+@import "components/slider";
+@import "components/icons";
+@import "components/content";
+@import "components/social";
+@import "components/statscards";
+@import "components/forumfeed";
+
+@import "layout/navbar";
+@import "layout/footer";

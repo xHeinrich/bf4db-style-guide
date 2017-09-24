@@ -1,0 +1,16 @@
+.form-control
+{
+  background: map-get($theme-colors, "primary");
+  color: map-get($bf4db-colors, "font-base");
+
+  &::placeholder
+  {
+    color: map-get($bf4db-colors, "font-base");
+  }
+
+  &:focus
+  {
+    color: map-get($bf4db-colors, "font-base");
+    background: lighten(map-get($theme-colors, "primary"), 5%);
+  }
+}

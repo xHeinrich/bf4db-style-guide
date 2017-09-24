@@ -1,38 +1,114 @@
+/*
+Overrides
+ */
+$enable-rounded:            false !default;
 
-// Body
-$body-bg: #f5f8fa;
+/*
+Bootstrap Color System
+ */
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$grays: (
+        100: $gray-100,
+        200: $gray-200,
+        300: $gray-300,
+        400: $gray-400,
+        500: $gray-500,
+        600: $gray-600,
+        700: $gray-700,
+        800: $gray-800,
+        900: $gray-900
+) !default;
 
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
 
-// Navbar
-$navbar-default-bg: #fff;
+$colors: (
+        blue: $blue,
+        indigo: $indigo,
+        purple: $purple,
+        pink: $pink,
+        red: $red,
+        orange: $orange,
+        yellow: $yellow,
+        green: $green,
+        teal: $teal,
+        cyan: $cyan,
+        white: $white,
+        gray: $gray-600,
+        gray-dark: $gray-800
+) !default;
 
-// Buttons
-$btn-default-color: $text-color;
+$bf4db-colors: (
+        "font-base": #fff,
+        "shade1": #a6aebf,
+        "shade2": #6f747f,
+        "shade3": #dee7ff,
+        "shade4": #2f3136,
+        "shade5": #c8d0e5,
+        "shade6": #eeeeee
+);
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+$theme-colors: (
+        primary: #232426,
+        primary-tone: #111112,
+        secondary: #a20f0f,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        dark: $gray-800
+) !default;
 
-// Panels
-$panel-default-heading-bg: #fff;
+$colors_social: (
+        "rss": #E06618,
+        "behance": #487CFB,
+        "bitbucket": #36517E,
+        "dropbox": #4D86D9,
+        "dribbble": #CC4D86,
+        "deviantart": #BAC940,
+        "facebook": #475995,
+        "flickr": #DB0180,
+        "foursquare": #D94A75,
+        "github": #464646,
+        "google-plus": #C14D3D,
+        "instagram": #527198,
+        "linkedin": #457AB3,
+        "medium": #71C66D,
+        "odnoklassniki": #D8732A,
+        "paypal": #1D3283,
+        "pinterest": #AE262B,
+        "reddit": #DE470B,
+        "skype": #62ADED,
+        "soundcloud": #DF5611,
+        "slack": #543B56,
+        "steam": #272425,
+        "tumblr": #384961,
+        "twitch": #5C43A1,
+        "twitter": #6DA9DE,
+        "vimeo": #69B5E7,
+        "vk": #657DA0,
+        "wordpress": #4072A1,
+        "youtube": #C6271E
+);
+

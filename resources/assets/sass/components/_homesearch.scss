@@ -1,0 +1,37 @@
+.home-search
+{
+  @extend .jumbotron;
+  @extend .jumbotron-fluid;
+
+  background: linear-gradient( rgba(155, 7, 117, 0.1), rgba(155, 0, 0, 0.2)), url('https://data4.origin.com/content/dam/originx/web/app/games/battlefield/battlefield-4/screenshots/battlefield-4-final-stand/1011899_screenhi_930x524_en_US_04.jpg');
+  background-size: cover;
+  //background: darken(map-get($bf4db-colors, "shade2"), 10%);
+  padding-bottom: 200px;
+  margin-top: -80px;
+  margin-bottom: -130px;
+  padding-top: 130px;
+  p
+  {
+    &.lead
+    {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: map-get($bf4db-colors, "font-base");
+      text-align: center;
+      text-shadow: 1px 1px 20px #000;
+    }
+  }
+
+  .search-input
+  {
+    display: flex;
+    justify-content: center;
+
+    .search-group
+    {
+      @extend .input-group;
+
+      flex-basis: 60%;
+    }
+  }
+}
